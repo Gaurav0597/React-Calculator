@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #9c6161, #38b538);
+  }
+  
+  .container {
+    background: #333131;
+    justify-content: center;
+    padding: 50px 0;
+    margin: 2rem auto;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 450px;
+  
+  }
+  .heading{
+    color: rgb(236, 192, 212);
+    text-align: center;
+    margin:0px;
+    font-size: 35px;
+  }
+  .heading:hover{
+    color:rgb(21, 150, 224);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(6rem, auto) repeat(4, 5rem);
+    justify-content: center;
+  } 
+   
+  .buttons>button {
+    box-shadow: 25px 25px 75px #282828,
+      -12px -12px 12px #484848 inset,
+      5px 5px 16px #0c0c0c inset;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: rgba(19, 164, 227, 0.75);
+    margin: 5px;
+    color: #c9c9c9;
+  }
+  
+  .ac {
+    background: #a12121 !important;
+    box-shadow: rgb(40 40 40) 25px 25px 75px, rgb(137 4 4) -12px -12px 12px inset, rgb(221 54 54) 5px 5px 16px inset !important;
+  }
+  
+  .buttons>button:hover {
+    background-color: rgb(50 49 49);
+    box-shadow: 25px 25px 75px #282828, -12px -12px 12px #5e5e5e inset, 5px 5px 16px #000 inset;
+  
+  }
+  
+  .buttons>button:focus {
+    margin: 6px;
+    background-color: teal;
+  }
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    width: 80%;
+    background-color: rgb(0 0 0 / 75%);
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 2rem auto;
+    height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+  }
+  
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
